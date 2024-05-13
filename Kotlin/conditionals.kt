@@ -1,6 +1,6 @@
 fun main() {
     println("Enter your numeric grade (between 0 and 100):")
-    val grade = readLine()?.toIntOrNull()
+    val grade: Int? = readLine()?.toIntOrNull()
 
     if (grade != null && grade in 0..100) {
         val letterGrade = when {
